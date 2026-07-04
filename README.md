@@ -37,3 +37,15 @@ problems/NNNN-slug/
   tests.cpp       edge cases + differential (or exhaustive when the space is small)
   bench.cpp       measured ns/op
 ```
+
+## other languages
+
+most of these are c++. a few are in go or python where that was the better tool
+-- same deal, same rigor: a fast solution, a dumb reference, a differential
+harness, a benchmark. the c++ build ignores those folders (no CMakeLists inside),
+so they never touch the cmake step.
+
+```sh
+go test cpf/...                          # every go problem, via the go.work
+python3 problems/<slug>/test_solution.py # a python problem's differential
+```

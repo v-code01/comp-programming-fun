@@ -1,0 +1,7 @@
+go 1.26.4
+
+use (
+	./problems/0022-grundys-game
+	./problems/0023-kth-subset-xor
+	./problems/0025-point-set-diameter
+)
